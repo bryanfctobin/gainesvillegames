@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gainesville Games</title>     
+        <!-- Favicon Below -->
+        <link type="image/png" rel="icon" href="https://i.imgur.com/Jqw6l2O.png">
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <!-- Local Stylesheet -->
+        <link rel="stylesheet" href="style.css?v1.1">
+        <!-- Font Awesome -->
+        <script src="https://use.fontawesome.com/8bed7c19dc.js"></script> 
+        <!-- Custom Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+        <!-- JQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- Local Scripts -->
+        <script src="script.js?v1.2"></script>
+        <script>
+            $(document).ready(function(){
+                $("#aboutNav").click(function(){
+                    $('html, body').animate({
+                        scrollTop: $("#about").offset().top -100
+                    }, 1000);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <div class="navs">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br>
+            <a href="/#about" class="navItem" id="aboutNav">About</a>
+            <!--<a href="#sign-up" class="navItem">Sign Up</a>-->
+            <a href="https://gainesvillegames.com/2017-games" class="navItem">2017 Games</a>
+            <!--<a href="#sponsors" class="navItem">Sponsors</a>-->
+            <!--<a href="#music" class="navItem">Music</a>-->
+            </div>
+        </div>
+        <div id="mainContent">
+            <nav class="navbar navbar-toggleable-md" id="navigation">
+                <div class="navbar-brand" href="#">
+                    <img src="https://i.imgur.com/qpPHLHw.png" alt="Gainesville Games Logo" id="logo">
+                </div>
+                <span onclick="openNav()"><i class="fa fa-bars" aria-hidden="true" id="hamburger"></i></span>
+            </nav>
+            <!-- Hero Text -->
+            <div id="hero" style="background-color:rgba(253,164,41,0.5);">
+                <h1>GAINESVILLE GAMES</h1>
+            </div>
+            <!-- Main Content Area -->"
+            <img src="https://i.imgur.com/X2O8TQn.jpg" class="img-fluid" id="mainImage">
+            <div class="container-fluid" id="about">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><p class="text-center">Gainesville, at its core, is a small town. We take care of each other, and we pride ourselves on making Gainesville a happy, healthy place to live. To help achieve this goal we have created the Gainesville Games, an annual field day fundraiser to help make sure the next generation is better than the last.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="https://i.imgur.com/1gZ0hqR.jpg" class="img-fluid" id="secondImage">
+            <!-- Meet the Team -->
+            <!-- Footer -->
+            <div class="container-fluid" id="footer" style="background-color:rgb(253,164,41);">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h2 style="color:white;">#ThisIsGNV</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,259 @@
+/** Defaults **/
+body {
+    color:white;
+    z-index:0;
+    position:relative;
+}
+p, li {
+    font-family: 'Ronzha One', serif;
+    font-size:24px;
+}
+ul {
+    list-style-type:none;
+}
+h2 {
+    font-family: 'Ronzha One', serif;
+    text-align:center;
+    font-size:50px;
+    color:black;
+}
+h1 {
+    color: white;
+    font-size:50px;
+}
+/** Classes **/
+.fa-bars {
+    font-size:50px !important;
+    opacity:0.9;
+    cursor:pointer;
+    padding-right:3%;
+}
+.featuredSponsor {
+    font-family: 'Ronzha One', serif;
+    text-align:center;
+    font-size:50px;
+    color:black;
+}
+.leftSpace {
+    padding-left:25%;
+    padding-top:5%;
+    margin-bottom:25px;
+}
+.list-group-item-icon {
+    position: relative;
+    display: initial;
+    padding:10px 15px;
+    float:right;
+}
+.navHeader {
+    font-family: 'Open Sans Light', sans-serif;
+    padding-left:5%;
+}
+.navItem {
+    font-family:'Open Sans', sans-serif;
+    padding-left:5%;
+    padding-top:1%;
+}
+.rightSpace {
+    padding-right:25%;
+    padding-top:5%;
+    margin-bottom:25px;
+}
+.sidenav {
+    height: 100%;
+    width:0;
+    position:fixed;
+    z-index:2;
+    top:0;
+    right:0;
+    background-color:rgba(153,204,255,0.85);
+    overflow-x:hidden;
+    padding-top:3%;
+    transition:0.5s;   
+}
+.sidenav a {
+    text-decoration: none;
+    font-size:25px;
+    color:white;
+    display:block;
+    transition: 0.3s;
+}
+.sidenav a:hover, .offcanvas a:focus {
+    color:#f1f1f1;
+}
+.sidenav .closebtn {
+    padding:0px 0px 8px 8px;
+    position: absolute;
+    top:0;
+    right: 25px;
+    font-size:85px;
+    margin-left:25px;
+    margin-top:-35px;
+    margin-right:-14px;
+}
+.sponsorBlurb {
+    font-size:
+}
+.sponsorImage {
+    margin-left:5%;
+    margin-right:5%;
+}
+
+/** IDs **/
+#about div div {
+    padding: 5%;
+    color: #3A4049;
+    letter-spacing: 0.1em;
+    text-align: justify;
+}
+#about div div p {
+    font-size:28px;
+    padding-right:10%;
+    padding-left:10%;
+}
+#hero h1 {
+    font-size:100px;
+    text-align: center;
+    color:white;
+    font-family:fantasy,serif;
+    position:relative;
+    margin-top:400px;
+}
+#sponsors div div h1 {
+    font-family:fantasy,serif;
+    color:black;
+    text-align:center;
+    font-size:100px;
+    padding-top:2%;
+    padding-bottom:2%;
+}
+#footer div div h2 {
+    padding-top:1%;
+    text-align:center;
+    padding-bottom:0px;
+}
+#logo {
+    cursor:pointer;
+}
+#mainImage {
+    position:relative;
+    margin-top:-500px;
+    z-index:-1;
+}
+#mainContent {
+    transition: margin-left .5s;
+}
+#navigation {
+    background-color:orange;
+    padding-left:5%;
+    position:fixed;
+    top:0;
+    width:100%;
+    overflow:hidden;
+    z-index:1;
+}
+#socialList a:hover {
+    color:white;
+    text-decoration: none;
+}
+#sponsors {
+    margin-bottom:2%;
+}
+#sponsors div div p {
+    padding: 5%;
+    color: #3A4049;
+    letter-spacing: 0.1em;
+    text-align: justify;
+    font-size:20px;
+    padding-right:10%;
+    padding-left:10%;
+}
+/** Media Queries */
+@media only screen and (max-width:1200px) {
+    #hero h1 {
+        font-size:50px;
+        margin-top:350px
+    }
+    #sponsors div div h1 {
+        font-size:40px;
+        padding-top:5%;
+        padding-bottom:5%;
+    }
+    #mainImage {
+        margin-top:-425px;
+    }
+}
+@media only screen and (max-width:800px) {
+    .fa-bars {
+        font-size:35px !important;
+        padding-right:1%;
+        padding-bottom:5px;
+    }
+    .featuredSponsor {
+        font-family: 'Roboto',cursive;
+        text-align:center;
+        font-size:30px;
+        color:black;
+    }
+    .navItem {
+        font-size:24px !important;
+    }
+    .sidenav .closebtn {
+        font-size:60px !important;
+        margin-top:-25px;
+    }
+    #hero h1 {
+        margin-top:175px;
+    }
+    #navigation {
+        padding-bottom:0%;
+        height:50px;
+    }
+    #mainImage {
+        margin-top:-300px;
+    }
+}
+@media only screen and (max-width:600px) {
+    .leftSpace {
+        padding-left:0%;
+        text-align:center;
+        padding-top:5%;
+        margin-bottom:0px;
+    }
+    .rightSpace {
+        padding-right:0%;
+        text-align:center;
+        padding-top:2%;
+        margin-bottom:25px;
+    }
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 24px;
+    }
+    .sponsorImage {
+        margin-left:10%;
+        margin-right:10%;
+    }
+    #about div div p {
+        font-size:20px;
+        padding-right:5%;
+        padding-left:5%;
+    }
+    #sponsors div div p {
+        font-size:20px;
+        padding-right:5%;
+        padding-left:5%;
+    }
+    #navigation {
+        padding-bottom:0%;
+        height:50px;
+    }
+    #hero h1 {
+        margin-top:115px;
+    }
+    #mainImage {
+        margin-top:-300px;
+    }
+}
